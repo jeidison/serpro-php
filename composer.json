@@ -1,0 +1,38 @@
+{
+  "name": "jeidison/serpro-php",
+  "description": "SDK para web service do serpro",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "serpro",
+    "datavalid",
+    "consulta cpf"
+  ],
+  "authors": [
+    {
+      "name": "Jeidison Farias",
+      "email": "jeidison.farias@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "pestphp/pest": "0.4.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jeidison\\SerproPHP\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}

@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  php:
+    image: serpro-php/app
+    container_name: serpro-php
+    hostname: serpro-php
+    ports:
+      - "8000:80"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html
